@@ -8,3 +8,7 @@ Scroll to top button
 ### `v1.1`
 
 Сhange of README file
+
+### `v1.2`
+
+Some addctions
