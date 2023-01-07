@@ -2,12 +2,26 @@ import './App.css';
 import Form from '../Form/Form'
 import List from '../List/List'
 import ScrollToTop from "react-scroll-to-top"
+import {useSelector} from 'react-redux';
+
 
 function App() {
+  const notes = useSelector(state => state.notes.notes)
+
+  const totalAmount = () => {
+    let summary = 0
+    notes.map(note => summary += +note.price)
+    return summary
+  }
+
+  totalAmount()
+
   return (
     <div className="App">
       <h2>Financial Manager</h2>
       <Form />
+      <hr />
+      <h2>Total Amount: {totalAmount()} &#8372;</h2>
       <hr />
       <List />
       <ScrollToTop 

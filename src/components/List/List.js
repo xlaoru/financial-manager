@@ -5,7 +5,6 @@ import {Container, Row, Col} from 'react-bootstrap';
 
 const List = () => {
     const notes = useSelector(state => state.notes.notes)
-
     return (
         <div className="List">
             <Container>

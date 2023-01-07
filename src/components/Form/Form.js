@@ -22,7 +22,7 @@ const Form = () => {
     return (
         <div className="Form" onSubmit={getData}>
             <form>
-                <input type="date" name="date" placeholder="type date" />
+                <input type="text" name="date" placeholder='type date...' onFocus={(event) => event.target.type = 'date'} onBlur={(event) => event.target.type = 'text'} />
                 <input type="text" name="title" placeholder="type title..." />
                 <input type="number" name="price" placeholder="type price..." />
                 <input type="submit" value="Submit" />

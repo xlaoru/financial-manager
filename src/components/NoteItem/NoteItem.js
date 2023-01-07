@@ -14,7 +14,7 @@ const NoteItem = ({date, title, price}) => {
                         <p className='date'>{date}</p>{title}
                     </Card.Title>
                     <Card.Text>
-                        {price}&#8372;
+                        {price} &#8372;
                     </Card.Text>
                     <div className='delete-button'>
                         <button onClick={() => dispatch(removeNote({date}))}>close</button>
