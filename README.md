@@ -13,3 +13,7 @@ Some addctions
 ### `v2.0`
 
 Added total amount. Date input has placeholder
+
+### `v2.1`
+
+Some addctions
